@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /code
 COPY . /code
-WORKDIR /code/WorkWechatBotTransfer/WorkWechatBotTransfer
+WORKDIR /code
 
 RUN dotnet nuget add source https://mirrors.cloud.tencent.com/nuget/
 RUN dotnet restore
